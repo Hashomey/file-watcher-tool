@@ -3,7 +3,7 @@ A simple CLI tool to watch files and run commands when they change.
 
 Usage
 
-​```js
+​```
 
 file-watcher [options] 
 
@@ -16,7 +16,7 @@ Options:
 ​```
 
 
-​```js
+​```
 
 # Build on changes
 file-watcher -d src -c "npm run build"
@@ -28,6 +28,6 @@ file-watcher -d dist -c "echo Built" -c "rsync dist server:/var/www"
 file-watcher -d src -i "*.log" -c "npm test"
 ​```
 
-​```js
+​```
 npm install -g file-watcher
 ​```
