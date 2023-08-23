@@ -4,6 +4,7 @@ A simple CLI tool to watch files and run commands when they change.
 Usage
 
 ​```js
+
 file-watcher [options] 
 
 Options:
@@ -11,6 +12,7 @@ Options:
 -d, --directory <dir>  Directory to watch
 -i, --ignore <pattern> Ignore files matching pattern  
 -w, --wait <ms>        Debounce timeout (default 100ms)
+
 ​```
 
 
