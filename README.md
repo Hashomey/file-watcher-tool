@@ -1,33 +1,35 @@
-File Watcher
-A simple CLI tool to watch files and run commands when they change.
+# File Watcher
 
-Usage
+A CLI tool to watch files and run commands on changes.
 
-​```
+## Usage
 
+```js
 file-watcher [options] 
 
-Options:
--c, --command <cmd>    Command to run on file change
--d, --directory <dir>  Directory to watch
--i, --ignore <pattern> Ignore files matching pattern  
--w, --wait <ms>        Debounce timeout (default 100ms)
-
-​```
+// Options
+-c, --command <cmd>    Command to run on change
+-d, --directory <dir>  Watch directory
+-i, --ignore <pattern> Ignore file patterns
+-w, --wait <ms>        Debounce timeout
 
 
-​```
-
-# Build on changes
 file-watcher -d src -c "npm run build"
 
-# Multiple commands
-file-watcher -d dist -c "echo Built" -c "rsync dist server:/var/www" 
 
-# Ignore logs 
-file-watcher -d src -i "*.log" -c "npm test"
-​```
-
-​```
+// Install globally
 npm install -g file-watcher
-​```
+
+// Print help
+file-watcher --help 
+
+// Start watching 
+file-watcher -d src -c "npm run build"
+
+
+
+Contributing
+Pull requests are welcome!
+
+MIT © Hashim Osman Musa
+
